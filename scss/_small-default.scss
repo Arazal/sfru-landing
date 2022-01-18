@@ -10,13 +10,13 @@ body {
 
 }
 
-h1{
-    color: royalblue;
+#splitter {
+    height: 2px;
+    background-color: $secondaryColor;
 }
 
-
-
 nav {
+
     height: 70px;
     // border: 1px solid black;
     display: flex;
@@ -24,6 +24,16 @@ nav {
     align-items: center;
     padding-left: $gutter;
     padding-right: $gutter;
+
+    // background: linear-gradient(90deg, rgba(45,41,38,1) 0%, rgba(200,16,46,0.8995973389355743) 100%, rgba(180,14,14,1) 100%, rgba(0,212,255,1) 100%);
+
+    // box-shadow: 0 -15px 10px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 10px 5px -5px $secondaryColor; 
+    margin-bottom: $gutter;
+    #about:hover {
+        color: $secondaryColor;
+        cursor: pointer;
+    }
 }
 
 footer {
@@ -35,38 +45,113 @@ footer {
     align-items: center;
     #footer:hover {
         color: $secondaryColor;
-        cursor: grab;
+        cursor: pointer;
     }
 }
 
-#splitter {
-    height: 2px;
-    background-color: $secondaryColor;
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    // justify-items: center;
+    // align-items: center;
+    div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        
+        // border: 2px solid black;
+        // font-size: 3em;
+
+        :hover {
+                    // transform: scale(1.1);
+                    // transition: transform 6s cubic-bezier(0.25, 0.45, 0.45, 0.95);
+                    // // opacity: 0.95;
+                    // // z-index: -1;
+        }
+    }
+
+    #cell2 {
+        font-size: 24px;
+        background: -webkit-linear-gradient($primaryColor, $secondaryColor);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        
+    }
+
+     button {
+        position: absolute;
+        margin-left: 50%;
+        margin-right: 50%;
+        font-size: 62px;
+        border: none;
+        background: -webkit-linear-gradient($primaryColor, $secondaryColor);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    button:hover {
+            // background: -webkit-linear-gradient( $secondaryColor, $primaryColor);  
+            // -webkit-background-clip: text;
+            // -webkit-text-fill-color: transparent;
+            cursor: pointer;
+            transform: scale(1.1);
+            transition: transform 6s cubic-bezier(0.25, 0.45, 0.45, 0.95);
+            opacity: 0.95;
+        }
+    // h1 {
+    //     font-size: 72px;
+    //     background: -webkit-linear-gradient(#eee, #333);
+    //     -webkit-background-clip: text;
+    //     -webkit-text-fill-color: transparent;
+    //   }
+    figure.cell1 {
+         width: 100%;
+    }
+    figure.cell1 img {width: 100%;}
+    
+    // figure.cell1 figcaption {
+    //     position: absolute;
+    //     margin-top: 50px;
+    //     margin-left: 50px;
+    //     // margin-right: auto;
+    //     // // top: 30%;
+    //     // margin: 25% 25%;
+        
+    //     // text-align: center;
+    //     font-size: 72px;
+    //     background: -webkit-linear-gradient($primaryColor, $secondaryColor);
+    //     -webkit-background-clip: text;
+    //     -webkit-text-fill-color: transparent;
+    //   }
+
+
 }
 
 
-    main {
-        display: flex;
-        justify-content: center;
-        height: 100%;
-        // width: 96%;
+
+
+//     main {
+//         display: flex;
+//         justify-content: center;
+//         height: 100%;
+//         // width: 96%;
    
-           figure {
+//            figure {
              
-            width: auto;
-               margin-left: $gutter;
-               // border: red 2px dashed;
-           }  
-   }
+//             width: auto;
+//                margin-left: $gutter;
+//                // border: red 2px dashed;
+//            }  
+//    }
 //    #maincontent {
-//        min-height: 100%;
+//     //    min-height: 100%;
 //        display: grid;
 //        grid-template-rows: 1fr  auto;
 //        grid-template-columns: 1fr 1fr;
 //        .innerdiv {
-//            margin: $gutter;
-//            margin-bottom: 1%;
+//         //    margin: $gutter;
+//         //    margin-bottom: 1%;
 //            border: 1px dashed red;
-//            height: 323px; 
+//         //    height: 323px; 
 //        }
 // }

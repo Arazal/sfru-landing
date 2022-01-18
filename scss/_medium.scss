@@ -2,4 +2,11 @@
     h1{
         color: orange;
     }
-} /* end media query */
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2px;
+    }
+} 
+/* end media query */
+

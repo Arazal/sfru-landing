@@ -101,8 +101,9 @@ body {
   font-family: 'Noto Serif', serif;
   font-family: 'Roboto', sans-serif; }
 
-h1 {
-  color: royalblue; }
+#splitter {
+  height: 2px;
+  background-color: #c8102e; }
 
 nav {
   height: 70px;
@@ -110,7 +111,12 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding-left: 2%;
-  padding-right: 2%; }
+  padding-right: 2%;
+  box-shadow: 0 10px 5px -5px #c8102e;
+  margin-bottom: 2%; }
+  nav #about:hover {
+    color: #c8102e;
+    cursor: pointer; }
 
 footer {
   height: 70px;
@@ -121,25 +127,55 @@ footer {
   align-items: center; }
   footer #footer:hover {
     color: #c8102e;
-    cursor: grab; }
-
-#splitter {
-  height: 2px;
-  background-color: #c8102e; }
+    cursor: pointer; }
 
 main {
-  display: flex;
-  justify-content: center;
-  height: 100%; }
-  main figure {
-    width: auto;
-    margin-left: 2%; }
+  display: grid;
+  grid-template-columns: 1fr; }
+  main div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; }
+  main #cell2 {
+    font-size: 24px;
+    background: -webkit-linear-gradient(#2d2926, #c8102e);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; }
+  main button {
+    position: absolute;
+    margin-left: 50%;
+    margin-right: 50%;
+    font-size: 62px;
+    border: none;
+    background: -webkit-linear-gradient(#2d2926, #c8102e);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; }
+  main button:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: transform 6s cubic-bezier(0.25, 0.45, 0.45, 0.95);
+    opacity: 0.95; }
+  main figure.cell1 {
+    width: 100%; }
+  main figure.cell1 img {
+    width: 100%; }
 
 @media only screen and (min-width: 560px) {
   h1 {
-    color: orange; } }
+    color: orange; }
+
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2px; } }
 /* end media query */
 @media only screen and (min-width: 1140px) {
   h1 {
-    color: green; } }
+    color: green; }
+
+  main {
+    display: grid;
+    gap: 2px;
+    grid-template-columns: 1fr 1fr; } }
 /* end media query */

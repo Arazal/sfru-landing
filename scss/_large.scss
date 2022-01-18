@@ -2,4 +2,10 @@
     h1{
         color: green;
     }
+    main {
+        display: grid;
+        gap: 2px;
+        grid-template-columns: 1fr 1fr;
+    }
 } /* end media query */
+
