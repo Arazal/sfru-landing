@@ -1,0 +1,26 @@
+{
+  "name": "sfru-landing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "source": "index.html",
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Arazal/sfru-landing.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Arazal/sfru-landing/issues"
+  },
+  "homepage": "https://github.com/Arazal/sfru-landing#readme",
+  "devDependencies": {
+    "parcel": "^2.2.1"
+  }
+}

@@ -85,9 +85,9 @@ main {
         margin-right: 50%;
         font-size: 62px;
         border: none;
-        background: -webkit-linear-gradient($primaryColor, $secondaryColor);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+        // background: -webkit-linear-gradient($primaryColor, $secondaryColor);
+        // -webkit-background-clip: text;
+        // -webkit-text-fill-color: transparent;
     }
     button:hover {
             // background: -webkit-linear-gradient( $secondaryColor, $primaryColor);  
